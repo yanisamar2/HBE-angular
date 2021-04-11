@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a routerLink="customers" class="nav-link" routerLinkActive="active">Customer List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="reservations" class="nav-link" routerLinkActive="active">Reservation List</a>
+  </li>
+    <li class="nav-item">
+        <a routerLink="addCustomer" class="nav-link" routerLinkActive="active">Add Customer</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="addReservation" class="nav-link" routerLinkActive="active">Add Reservation</a>
+  </li>
+  </ul>
+</nav>
+<div class="container">
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <span>Yanis 2021</span>
+  </div>
+</footer>

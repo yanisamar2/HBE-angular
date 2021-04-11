@@ -1,0 +1,24 @@
+<h3>Update Reservation</h3>
+
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="checkin">Check in</label>
+        <input type="text" class="form-control" id="checkin" required [(ngModel)]="reservation.checkin" name="checkin">
+      </div>
+  
+      <div class="form-group">
+        <label for="checkout">Check out</label>
+        <input type="text" class="form-control" id="checkout" required [(ngModel)]="reservation.checkout" name="checkout">
+      </div>
+  
+      <div class="form-group">
+        <label for="booker">Booker</label>
+        <input type="text" class="form-control" id="firstName" required [(ngModel)]="reservation.guest.firstName" name="firstName">
+        <input type="text" class="form-control" id="lastName" required [(ngModel)]="reservation.guest.lastName" name="lastName">
+        <input type="text" class="form-control" id="mail" required [(ngModel)]="reservation.guest.mail" name="mail">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

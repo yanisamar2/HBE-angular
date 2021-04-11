@@ -1,0 +1,25 @@
+
+<h2>Reservation Details</h2> 
+
+<hr/>
+<div *ngIf="reservation">
+  <div>
+    <label><b>Id: </b></label> {{reservation.id}}
+  </div>
+  <div>
+    <label><b>Booking Date: </b></label> {{reservation.bookedOn}}
+  </div>
+  <div>
+    <label><b>Customer Name: </b></label> reservation.guest.firstName}} {{reservation.guest.lastName}}
+  </div>
+  <div>
+    <label><b>Check in: </b></label> {{reservation.checkin}}
+  </div>
+  <div>
+    <label><b>Check out: </b></label> {{reservation.checkout}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Reservation List</button><br>
